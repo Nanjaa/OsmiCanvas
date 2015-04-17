@@ -129,6 +129,7 @@ $('.bordersButton').click(function() {
 // var height = $('.pic').height();
 // console.log(height);
 
+
 // var repeatNumber = (width * height)/gridSize;
 // console.log(repeatNumber);
 
