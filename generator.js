@@ -170,7 +170,7 @@ $('.backgroundButton').click(function() {
 
 $('.addSquaresButton').click(function() {
 	var squaresArrayPlus = new Array();
-	for(var i=0; i<addSquaresValue; i++) {
+	for(var i=0; i<addSquares.value; i++) {
 		squaresArrayPlus.push('<div class="square"></div>');
 		$('.squareContainer').append(squaresArrayPlus[i]);
 	};
