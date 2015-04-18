@@ -16,24 +16,60 @@
 <link href='http://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
 
 <!-- document body -->
-</head>
-<body>
 
+<!-- POPUP FOR CONFIRM RESET -->
+<div class="reset">
+	<div class="resetConfirm">
+		<h1>Alert!</h1>
+		<p>Are you sure you would like to reset your ENTIRE masterpiece?</p>
+		<button class="yesReset">Yes</button>
+		<button class="noReset">No</button>
+	</div>
+</div>
 
-		<div class="color selector">
-			<input class="color {pickerFaceColor:'transparent',pickerFace:3,pickerBorder:0,pickerInsetColor:'black'}" id="myColor">
+<div class="navBarBackground">
+	<img class="headerImg" src="header.png">
+</div>
+<div class="navBar">
+	<h1>OsmiCanvas</h1>
+	<!-- TOP HALF OF THE NAV BAR -->
+	<div class="topHalf">
+		<input type="text" id="userInput" placeholder="Picture URL">
+		<button class="backgroundButton">Submit</button>
+		<button class="saveButton">Save</button>
+		<button class="faqButton">FAQ</button>
+		<button class="resetButton">Reset</button>
+	</div>
+	<!-- BOTTOM HALF OF THE NAV BAR -->
+	<div class="bottomHalf">
+		<input class="color {pickerFaceColor:'transparent',pickerFace:3,pickerBorder:0,pickerInsetColor:'black'}" id="myColor">
+		<div class="resizeGrid">
+			<button class="resizeButton">Grid Size</button>
+			<div class="resizeContent">
+				<div class="Small">Small</div>
+				<div class="Medium">Medium</div>
+				<div class="Large">Large</div>
+			</div>
 		</div>
+		<div class="toggleButtons">
+			<input type="text" id="addSquares" placeholder="Add ### Squares" size="14">
+			<button class="addSquaresButton">Add</button>
+			<button class="toggleBackgroundButton">Background On/Off</button>
+			<button class="bordersButton">Grid On/Off</button>
+		</div>
+	</div>
+<!-- END OF NAV BAR -->
+</div>
 
-<!-- grid body -->
+<!-- GRID BODY -->
 
 <div class="gridBody">
 	<img class="pic" src="monalisa.jpg">
 	<div class="squareContainer">
-
 	</div>
-</div><br>
+</div>
 
-<!-- about me -->
+<!-- FREQUENTLY ASKED QUESTIONS -->
 
 <div class="faq">
 	<div class="faqTitle">
@@ -43,20 +79,21 @@
 		<h3>Can I upload my own file?</h3>
 			<p>Not on this website. You can only link pictures that have already been uploaded onto the internet. If you would like to upload your own photo, I would suggest heading over to <a href="http://www.imgur.com">imgur.com</a> and upload it there. You can then get the link to the photo by right clicking it, and copy/paste that link here.</p>
 		<h3>How do I print my creation?</h3>
-			<p>Save your picture by clicking the save button. Fnd your file on your computer, and print it from there.</p>
+			<p>Hold down the control key on your computer as well as "P"</p>
 		<h3>Can I undo the color I just placed?</h3>
 			<p>Although there is no direct "undo" function, you can use the right click button on your mouse to remove any color from the square you just changed.</p>
 		<h3>Can I save this and come back to it later?</h3>
-			<p>Unfortunately, you cannot. The save button will only save the image to your computer, not to our servers.</p>
+			<p>Unfortunately, you cannot.</p>
 	</div>
 </div>
 
-<!-- javascript -->
+<!-- JAVASCRIPT -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="generator.js"></script>
 <script type="text/javascript" src="jscolor/jscolor.js"></script>
 
-<!-- the end -->
+<!-- THE END -->
+
 </body>
 </html>
